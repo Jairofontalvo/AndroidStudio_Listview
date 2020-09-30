@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cilindro">
+
+    <TextView
+        android:id="@+id/lblTituloCilindro"
+        android:layout_width="124dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/cilindro"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblRadioCili"
+        android:layout_width="66dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="144dp"
+        android:text="@string/radio"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/txtRadioCili"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblAlturaCili"
+        android:layout_width="86dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/lbl_altura"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/txtAlturaCili"
+        app:layout_constraintHorizontal_bias="0.31"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblRadioCili" />
+
+    <EditText
+        android:id="@+id/txtRadioCili"
+        android:layout_width="150dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="120dp"
+        android:ems="10"
+        android:hint="@string/cero"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTituloCilindro" />
+
+    <EditText
+        android:id="@+id/txtAlturaCili"
+        android:layout_width="152dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="120dp"
+        android:ems="10"
+        android:hint="@string/cero"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRadioCili" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="52dp"
+        android:onClick="Calcular"
+        android:text="@string/btn_calcular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAlturaCili" />
+
+    <Button
+        android:id="@+id/btnLimpiar"
+        android:layout_width="126dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="76dp"
+        android:onClick="limpiar"
+        android:text="@string/btn_limpiar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAlturaCili" />
+
+    <TextView
+        android:id="@+id/lblTituloResultado"
+        android:layout_width="157dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="56dp"
+        android:text="@string/lbl_resultado"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcular" />
+
+    <TextView
+        android:id="@+id/lblresultado"
+        android:layout_width="350dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="40dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTituloResultado" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

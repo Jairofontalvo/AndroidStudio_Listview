@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Triangulo">
+    <TextView
+        android:id="@+id/lblTituloTringulo"
+        android:layout_width="147dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/triangulo"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblBaseTri"
+        android:layout_width="60dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="120dp"
+        android:text="@string/lblbase"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/txtBaseTri"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblAlturaTri"
+        android:layout_width="65dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/lbl_altura"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/txtAlturaTri"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblBaseTri" />
+
+    <EditText
+        android:id="@+id/txtBaseTri"
+        android:layout_width="183dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="96dp"
+        android:ems="10"
+        android:hint="@string/cero"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTituloTringulo" />
+
+    <EditText
+        android:id="@+id/txtAlturaTri"
+        android:layout_width="183dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="92dp"
+        android:ems="10"
+        android:hint="@string/cero"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBaseTri" />
+
+    <Button
+        android:id="@+id/btnCalcularT"
+        android:layout_width="131dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="84dp"
+        android:onClick="Calcular"
+        android:text="@string/btn_calcular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAlturaTri" />
+
+    <Button
+        android:id="@+id/btnLimpiarT"
+        android:layout_width="129dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="72dp"
+        android:onClick="limpiar"
+        android:text="@string/btn_limpiar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btnCalcularT"
+        app:layout_constraintTop_toBottomOf="@+id/txtAlturaTri" />
+    <TextView
+        android:id="@+id/lblTituloResultado"
+        android:layout_width="157dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="56dp"
+        android:text="@string/lbl_resultado"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcularT" />
+
+    <TextView
+        android:id="@+id/lblresultado"
+        android:layout_width="350dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="40dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTituloResultado" />
+</androidx.constraintlayout.widget.ConstraintLayout>

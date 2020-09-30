@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Geometria</string>
+    <string name="lbl_opciones">Opciones</string>
+    <string name="lbl_tituloHome">Opciones</string>
+    <string name="areas">Areas</string>
+    <string name="volumenes">Volúmenes</string>
+    <string name="operacion_realizada">Cálculos Realizados</string>
+    <string-array name="opciones">
+        <item>@string/areas</item>
+        <item>@string/volumenes</item>
+        <item>@string/operacion_realizada</item>
+    </string-array>
+    <string name="cuadrado">Cuadrado</string>
+    <string name="Rectangulo">Rectángulo</string>
+    <string name="triangulo">Triángulo</string>
+    <string name="circulo">Círculo</string>
+    <string-array name="opcionesAreas">
+        <item>@string/cuadrado</item>
+        <item>@string/Rectangulo</item>
+        <item>@string/triangulo</item>
+        <item>@string/circulo</item>
+    </string-array>
+    <string name="cilindro">Cilindro</string>
+    <string name="cono">Cono</string>
+    <string name="cubo">Cubo</string>
+    <string name="lbl_lados_cadrado"> Lados</string>
+    <string name="cero">0</string>
+    <string name="btn_calcular">Calcular</string>
+    <string name="btn_limpiar">Limpiar</string>
+    <string-array name="opcionesVolumnes">
+        <item>@string/esfera</item>
+        <item>@string/cilindro</item>
+        <item>@string/cono</item>
+        <item>@string/cubo</item>
+    </string-array>
+    <string name="lbl_operacion_cuadrado">Area del Cuadrado</string>
+    <string name="lbl_lados">Lados</string>
+    <string name="mensaje_area">El Area es: </string>
+    <string name="mensaje_volumen">El Volumen es: </string>
+    <string name="lbl_operacion">Operacion</string>
+    <string name="Numero">No</string>
+    <string name="lbl_datos">Datos</string>
+    <string name="lbl_resultado">Resultado</string>
+    <string name="lblbase">Base</string>
+    <string name="lbl_altura">Altura</string>
+    <string name="lbl_areaRectangulo">Area del Rectangulo</string>
+    <string name="lbl_areatriangulo">Area del Triángulo</string>
+    <string name="lbl_area_circulo">Area del Circulo</string>
+    <string name="lbl_vol_esfera">Volumen de la esfera</string>
+    <string name="lbl_vol_cilindro">Volumen del Cilindro</string>
+    <string name="lbl_vol_cono">Volumen del Cono</string>
+    <string name="lbl_vol_cubo">Volumen del Cubo</string>
+    <string name="radio">Radio</string>
+    <string name="lbl_arista">Aristas</string>
+    <string name="esfera">Esfera</string>
+    <string name="error">Campo Requerido</string>
+</resources>

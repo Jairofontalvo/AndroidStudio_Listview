@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Rectangulo">
+    <TextView
+        android:id="@+id/lblTitletriangulo"
+        android:layout_width="142dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/Rectangulo"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblBaseRect"
+        android:layout_width="60dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="120dp"
+        android:text="@string/lblbase"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/txtBaseRect"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblAlturaRect"
+        android:layout_width="65dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/lbl_altura"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/txtAlturaRect"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblBaseRect" />
+
+    <EditText
+        android:id="@+id/txtBaseRect"
+        android:layout_width="183dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="104dp"
+        android:ems="10"
+        android:hint="@string/cero"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTitletriangulo" />
+
+    <EditText
+        android:id="@+id/txtAlturaRect"
+        android:layout_width="183dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="100dp"
+        android:ems="10"
+        android:hint="@string/cero"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBaseRect" />
+
+    <Button
+        android:id="@+id/btnCalcularT"
+        android:layout_width="131dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="76dp"
+        android:onClick="CalcularT"
+        android:text="@string/btn_calcular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAlturaRect" />
+
+    <Button
+        android:id="@+id/btnLimpiarT"
+        android:layout_width="129dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="72dp"
+        android:onClick="limpiar"
+        android:text="@string/btn_limpiar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.838"
+        app:layout_constraintStart_toEndOf="@+id/btnCalcularT"
+        app:layout_constraintTop_toBottomOf="@+id/txtAlturaRect" />
+
+    <TextView
+        android:id="@+id/lblTituloResultado"
+        android:layout_width="157dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="56dp"
+        android:text="@string/lbl_resultado"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcularT" />
+
+    <TextView
+        android:id="@+id/lblresultado"
+        android:layout_width="350dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="40dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTituloResultado" />
+</androidx.constraintlayout.widget.ConstraintLayout>
